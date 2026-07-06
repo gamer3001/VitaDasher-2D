@@ -13,9 +13,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -100.0
-margin_top = -50.0
+margin_top = -60.0
 margin_right = 100.0
-margin_bottom = 50.0
+margin_bottom = 80.0
 
 [node name="Campaign" type="Button" parent="VBoxContainer"]
 margin_right = 200.0
@@ -30,5 +30,13 @@ margin_bottom = 84.0
 rect_min_size = Vector2( 0, 40 )
 text = "Mode Infini"
 
+[node name="Survival" type="Button" parent="VBoxContainer"]
+margin_top = 88.0
+margin_right = 200.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 0, 40 )
+text = "Mode Survie"
+
 [connection signal="pressed" from="VBoxContainer/Campaign" to="." method="_on_Campaign_pressed"]
 [connection signal="pressed" from="VBoxContainer/Infinite" to="." method="_on_Infinite_pressed"]
+[connection signal="pressed" from="VBoxContainer/Survival" to="." method="_on_Survival_pressed"]
