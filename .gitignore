@@ -1,0 +1,10 @@
+# Godot 4+ ignores
+.import/
+.godot/
+export_presets.cfg
+*.log
+*.tmp
+
+# VPK/Build files
+*.vpk
+game.zip
